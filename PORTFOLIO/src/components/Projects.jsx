@@ -15,15 +15,15 @@ function Projects() {
         "A travel planning application to explore destinations, manage trips and save travel preferences using React.",
       image: "/projects/travel.png",
       repository: "https://github.com/renishkorat/REACT-APP/tree/main/TRAVEL",
-      demo: "#",
+      demo: "https://travel-planner-three-blue.vercel.app/",
     },
     {
       title: "Portfolio Website",
       description:
         "A responsive personal portfolio showcasing my skills, projects and frontend development experience.",
       image: "/projects/portfolio.png",
-      repository: "https://renish-portfolio-phi-bice.vercel.app/",
-      demo: "#",
+      repository: "https://github.com/renishkorat",
+      demo: "https://renish-portfolio-phi-bice.vercel.app/",
     },
   ];
 
