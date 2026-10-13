@@ -1,12 +1,12 @@
 
 import { useEffect, useReducer, useState } from 'react';
 
-import Header from './components/Header';
-import DestinationExplorer from './components/DestinationExplorer';
-import MyTrip from './components/MyTrip';
-import TravelPreferences from './components/TravelPreferences';
+import Header from './components/Header.jsx';
+import DestinationExplorer from './components/DestinationExplorer.jsx';
+import MyTrip from './components/MyTrip.jsx';
+import TravelPreferences from './components/TravelPreferences.jsx';
 
-import destinations from './data/destinations';
+import destinations from './data/destinations.js';
 import './App.css';
 
 // REDUCER
