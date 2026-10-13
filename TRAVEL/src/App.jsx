@@ -6,7 +6,7 @@ import DestinationExplorer from './components/DestinationExplorer.jsx';
 import MyTrip from './components/MyTrip.jsx';
 import TravelPreferences from './components/TravelPreferences.jsx';
 
-import destinations from './data/destinations.js';
+import destinations from './data/Destinations.js';
 import './App.css';
 
 // REDUCER
