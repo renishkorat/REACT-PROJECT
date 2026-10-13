@@ -22,7 +22,7 @@ function Projects() {
       description:
         "A responsive personal portfolio showcasing my skills, projects and frontend development experience.",
       image: "/projects/portfolio.png",
-      repository: "https://github.com/renishkorat",
+      repository: "https://renish-portfolio-phi-bice.vercel.app/",
       demo: "#",
     },
   ];
