@@ -1,4 +1,6 @@
-// import github from '../assets/github.svg';
+import github from '../assets/github.svg';
+import Travel from "../assets/Travel.png";
+import portfolio from "../assets/portfolio.png";
 function Projects() {
   const projects = [
     {
@@ -13,7 +15,7 @@ function Projects() {
       title: "Travel Planner",
       description:
         "A travel planning application to explore destinations, manage trips and save travel preferences using React.",
-      image: "/projects/travel.png",
+      image: Travel,
       repository: "https://github.com/renishkorat/REACT-APP/tree/main/TRAVEL",
       demo: "https://travel-planner-three-blue.vercel.app/",
     },
@@ -21,7 +23,7 @@ function Projects() {
       title: "Portfolio Website",
       description:
         "A responsive personal portfolio showcasing my skills, projects and frontend development experience.",
-      image: "/projects/portfolio.png",
+      image: portfolio,
       repository: "https://github.com/renishkorat",
       demo: "https://renish-portfolio-phi-bice.vercel.app/",
     },
@@ -80,7 +82,7 @@ function Projects() {
                   className="inline-flex items-center gap-2 rounded-full border border-[#FB7185]/50 px-4 py-2 text-sm font-medium text-[#FB7185] transition hover:bg-[#FB7185] hover:text-[#2B0A16]"
                 >
                   Repository
-                  <img src="" className='className="h-4 w-4 fill-current"' alt="" />
+                  <img src={github} className='className="h-4 w-4 fill-current"' alt="" />
                 </a>
 
                 <a

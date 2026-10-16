@@ -5,6 +5,7 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Projects from './components/Projects'
+import ScrollProgress from './components/ScrollProgress'
 
 import './App.css'
 
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <>
+    <ScrollProgress />
     <Header />
     <Home />
     <About />

@@ -1,11 +1,11 @@
 function Skills(){
     const skills = [
-        {name: "C Language",percentages:70},
+        {name: "C Language",percentages:75},
         {name: "HTML5",percentages:95},
-        {name: "CSS3",percentages:70},
-        {name: "Tailwind CSS",percentages:70},
-        {name: "Bootstrap",percentages:70},
-        {name: "React js",percentages:70},
+        {name: "CSS3",percentages:92},
+        {name: "Tailwind CSS",percentages:89},
+        {name: "Bootstrap",percentages:85},
+        {name: "React js",percentages:90},
     ];
     return(
          <section
@@ -49,4 +49,4 @@ function Skills(){
     )
 }
 
-export default Skills
+export default Skills;

@@ -1,3 +1,4 @@
+import renish from "../assets/renish.png";
 
 function Home() {
   return (
@@ -20,7 +21,7 @@ function Home() {
           <h1 className="text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
             Hi, I'm{" "}
             <span className="text-[#FB7185]">
-              Renish Korat 
+              Renish Korat
             </span>
           </h1>
 
@@ -77,10 +78,11 @@ function Home() {
           <div className="relative flex h-64 w-64 items-center justify-center rounded-full border-2 border-[#FB7185]/60 bg-[#451525] shadow-[0_0_55px_rgba(251,113,133,0.3)] sm:h-80 sm:w-80">
             <div className="absolute inset-3 rounded-full border border-dashed border-rose-400/40" />
 
-            <span className="text-8xl font-black text-[#FB7185] sm:text-9xl">
-              R
-            </span>
-
+            <img
+              src={renish}
+              alt="Renish Korat"
+              className="h-52 w-50 rounded-full object-cover sm:h-64 sm:w-64"
+            />
             <span className="absolute -right-2 top-8 rounded-full border border-rose-400/30 bg-[#2B0A16] px-3 py-2 text-xs font-bold text-[#FB7185]">
               HTML5
             </span>

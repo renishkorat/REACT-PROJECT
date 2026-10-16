@@ -202,6 +202,7 @@ function Contact() {
                                 name="message"
                                 rows="5"
                                 placeholder="Write your message here..."
+                                maxLength={200}
                                 required
                                 className="w-full resize-y rounded-xl border border-rose-400/20 bg-[#2B0A16] px-4 py-3 text-white outline-none placeholder:text-rose-100/40 focus:border-[#FB7185]"
                             />
