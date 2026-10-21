@@ -194,10 +194,6 @@ export default function Home() {
         return a.email.localeCompare(b.email);
       }
 
-      if (sortOrder === "phone-asc") {
-        return a.phone.localeCompare(b.phone);
-      }
-
       return 0;
     });
 
