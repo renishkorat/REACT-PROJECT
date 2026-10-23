@@ -22,10 +22,21 @@ export default function Home() {
 
   const userPerPage = 4;
 
-  // Load data from LocalStorage
-  useEffect(() => {
-    try {
+  // Load data from LocalStorage 
+useEffect(() => {
+  try {
+    // Get existing data from LocalStorage
+    const savedData = localStorage.getItem("userDetail");
 
+    if (savedData !== null) {
+      // Load existing users if data is already available
+      const localStorageArr = JSON.parse(savedData);
+
+      if (Array.isArray(localStorageArr)) {
+        setArrOfObj(localStorageArr);
+      }
+    } else {
+      // Add default users only when LocalStorage is empty
       const user1 = [
         {
           name: "Renish Korat",
@@ -113,22 +124,28 @@ export default function Home() {
         }
       ];
 
+      // Save default users to LocalStorage
       localStorage.setItem("userDetail", JSON.stringify(user1));
-      const localStorageArr = JSON.parse(
-        localStorage.getItem("userDetail") || "[]"
-      );
 
-      if (Array.isArray(localStorageArr)) {
-        setArrOfObj(localStorageArr);
-      }
-    } catch {
-      setArrOfObj([]);
+      // Update the users list in the component
+      setArrOfObj(user1);
     }
-  }, []);
+  } catch (error) {
+    // Handle errors while loading data
+    console.error("Error loading user data:", error);
+    setArrOfObj([]);
+  }
+}, []);
 
-  // Handle input changes
+  // Handle input changes 
   const handlechange = (e) => {
     const { name, value } = e.target;
+
+    // Phone mein sirf digits allow honge 
+    if (name === "phone" && !/^\d*$/.test(value)) {
+      return;
+    }
+
 
     setObj({
       ...obj,
@@ -141,11 +158,11 @@ export default function Home() {
     });
   };
 
-  // Validate all fields
+  // Validate all fields 
   const validateForm = () => {
     const newErrors = {};
 
-    // Name validation
+    // Name validation 
     if (!obj.name.trim()) {
       newErrors.name = "Name is required";
     } else if (obj.name.trim().length < 3) {
@@ -154,7 +171,7 @@ export default function Home() {
       newErrors.name = "Enter a valid name using letters only";
     }
 
-    // Email validation
+    // Email validation 
     if (!obj.email.trim()) {
       newErrors.email = "Email is required";
     } else if (
@@ -163,7 +180,7 @@ export default function Home() {
       newErrors.email = "Enter a valid email address";
     }
 
-    // Password validation
+    // Password validation 
     if (!obj.password) {
       newErrors.password = "Password is required";
     } else if (obj.password.length < 8) {
@@ -178,14 +195,14 @@ export default function Home() {
       newErrors.password = "Include at least one special character";
     }
 
-    // Phone validation
+    // Phone validation 
     if (!obj.phone.trim()) {
       newErrors.phone = "Phone number is required";
     } else if (!/^[6-9][0-9]{9}$/.test(obj.phone.trim())) {
       newErrors.phone = "Enter a valid 10-digit Indian mobile number";
     }
 
-    // Gender validation
+    // Gender validation 
     if (!obj.gender) {
       newErrors.gender = "Please select your gender";
     }
@@ -195,7 +212,7 @@ export default function Home() {
     return Object.keys(newErrors).length === 0;
   };
 
-  // Handle form submit
+  // Handle form submit 
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -236,7 +253,7 @@ export default function Home() {
     setShowPassword(false);
   };
 
-  // Edit user
+  // Edit user 
   const handleEdit = (index) => {
     setObj({ ...arrOfObj[index] });
     setEditIndex(index);
@@ -244,7 +261,7 @@ export default function Home() {
     setShowPassword(false);
   };
 
-  // Delete user
+  // Delete user 
   const handleDelete = (index) => {
     if (window.confirm("Are you sure you want to delete?")) {
       const updateArr = arrOfObj.filter(
@@ -427,7 +444,12 @@ export default function Home() {
       </div>
 
       {/* Registered Users Table */}
-      <h4 className="mb-3">Registered Users</h4>
+      <h4 className="mb-3">
+        Registered Users
+        <span className="badge bg-primary ms-2">
+          {arrOfObj.length}
+        </span>
+      </h4>
 
       <div className="row mb-3">
         <div className="col-md-6 mb-2">
@@ -560,4 +582,4 @@ export default function Home() {
       </div>
     </div>
   );
-}
+} 
