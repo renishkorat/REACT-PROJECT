@@ -23,119 +23,119 @@ export default function Home() {
   const userPerPage = 4;
 
   // Load data from LocalStorage 
-useEffect(() => {
-  try {
-    // Get existing data from LocalStorage
-    const savedData = localStorage.getItem("userDetail");
+  useEffect(() => {
+    try {
+      // Get existing data from LocalStorage
+      const savedData = localStorage.getItem("userDetail");
 
-    if (savedData !== null) {
-      // Load existing users if data is already available
-      const localStorageArr = JSON.parse(savedData);
+      if (savedData !== null) {
+        // Load existing users if data is already available
+        const localStorageArr = JSON.parse(savedData);
 
-      if (Array.isArray(localStorageArr)) {
-        setArrOfObj(localStorageArr);
-      }
-    } else {
-      // Add default users only when LocalStorage is empty
-      const user1 = [
-        {
-          name: "Renish Korat",
-          email: "koratrenish350@gmail.com",
-          password: "Renish@123",
-          phone: "7984048969",
-          gender: "Male"
-        },
-        {
-          name: "KAVY PATEL",
-          email: "kavy@gmail.com",
-          password: "Kavy@1234",
-          phone: "8487927223",
-          gender: "Male"
-        },
-        {
-          name: "meet korat",
-          email: "meet@gmail.com",
-          password: "Meet@123",
-          phone: "8487927223",
-          gender: "Male"
-        },
-        {
-          name: "Rahul Patel",
-          email: "rahul@gmail.com",
-          password: "Rahul@123",
-          phone: "9876543210",
-          gender: "Male"
-        },
-        {
-          name: "Priya Sharma",
-          email: "priya@gmail.com",
-          password: "Priya@123",
-          phone: "9876543211",
-          gender: "Female"
-        },
-        {
-          name: "Meet Shah",
-          email: "meetshah@gmail.com",
-          password: "Meet@123",
-          phone: "9876543212",
-          gender: "Male"
-        },
-        {
-          name: "Krisha Desai",
-          email: "krisha@gmail.com",
-          password: "Krisha@123",
-          phone: "9876543213",
-          gender: "Female"
-        },
-        {
-          name: "Yash Joshi",
-          email: "yash@gmail.com",
-          password: "Yash@123",
-          phone: "9876543214",
-          gender: "Male"
-        },
-        {
-          name: "Neha Verma",
-          email: "neha@gmail.com",
-          password: "Neha@123",
-          phone: "9876543215",
-          gender: "Female"
-        },
-        {
-          name: "Dhruv Korat",
-          email: "dhruv@gmail.com",
-          password: "Dhruv@123",
-          phone: "9876543216",
-          gender: "Male"
-        },
-        {
-          name: "Harsh Patel",
-          email: "harsh@gmail.com",
-          password: "Harsh@123",
-          phone: "9876543217",
-          gender: "Male"
-        },
-        {
-          name: "Pooja Shah",
-          email: "pooja@gmail.com",
-          password: "Pooja@123",
-          phone: "9876543218",
-          gender: "Female"
+        if (Array.isArray(locaflStorageArr)) {
+          setArrOfObj(localStorageArr);
         }
-      ];
+      } else {
+        // Add default users only when LocalStorage is empty
+        const user1 = [
+          {
+            name: "Renish Korat",
+            email: "koratrenish350@gmail.com",
+            password: "Renish@123",
+            phone: "7984048969",
+            gender: "Male"
+          },
+          {
+            name: "KAVY PATEL",
+            email: "kavy@gmail.com",
+            password: "Kavy@1234",
+            phone: "8487927223",
+            gender: "Male"
+          },
+          {
+            name: "meet korat",
+            email: "meet@gmail.com",
+            password: "Meet@123",
+            phone: "8487927223",
+            gender: "Male"
+          },
+          {
+            name: "Rahul Patel",
+            email: "rahul@gmail.com",
+            password: "Rahul@123",
+            phone: "9876543210",
+            gender: "Male"
+          },
+          {
+            name: "Priya Sharma",
+            email: "priya@gmail.com",
+            password: "Priya@123",
+            phone: "9876543211",
+            gender: "Female"
+          },
+          {
+            name: "Meet Shah",
+            email: "meetshah@gmail.com",
+            password: "Meet@123",
+            phone: "9876543212",
+            gender: "Male"
+          },
+          {
+            name: "Krisha Desai",
+            email: "krisha@gmail.com",
+            password: "Krisha@123",
+            phone: "9876543213",
+            gender: "Female"
+          },
+          {
+            name: "Yash Joshi",
+            email: "yash@gmail.com",
+            password: "Yash@123",
+            phone: "9876543214",
+            gender: "Male"
+          },
+          {
+            name: "Neha Verma",
+            email: "neha@gmail.com",
+            password: "Neha@123",
+            phone: "9876543215",
+            gender: "Female"
+          },
+          {
+            name: "Dhruv Korat",
+            email: "dhruv@gmail.com",
+            password: "Dhruv@123",
+            phone: "9876543216",
+            gender: "Male"
+          },
+          {
+            name: "Harsh Patel",
+            email: "harsh@gmail.com",
+            password: "Harsh@123",
+            phone: "9876543217",
+            gender: "Male"
+          },
+          {
+            name: "Pooja Shah",
+            email: "pooja@gmail.com",
+            password: "Pooja@123",
+            phone: "9876543218",
+            gender: "Female"
+          }
+        ];
 
-      // Save default users to LocalStorage
-      localStorage.setItem("userDetail", JSON.stringify(user1));
+        // Save default users to LocalStorage
+        localStorage.setItem("userDetail", JSON.stringify(user1));
 
-      // Update the users list in the component
-      setArrOfObj(user1);
+        // Update the users list in the component
+        setArrOfObj(user1);
+      }
+    } catch (error) {
+      // Handle errors while loading data
+      console.error("Error loading user data:", error);
+      setArrOfObj([]);
     }
-  } catch (error) {
-    // Handle errors while loading data
-    console.error("Error loading user data:", error);
-    setArrOfObj([]);
-  }
-}, []);
+  }, []);
 
   // Handle input changes 
   const handlechange = (e) => {
