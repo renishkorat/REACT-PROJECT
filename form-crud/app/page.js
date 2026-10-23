@@ -20,11 +20,86 @@ export default function Home() {
   const [sortOrder, setSortOrder] = useState("default");
   const [currentPage, setCurrentPage] = useState(1);
 
-  const userPerPage = 2;
+  const userPerPage = 4;
 
   // Load data from LocalStorage
   useEffect(() => {
     try {
+
+      const user1 = [
+        {
+          name: "Renish Korat",
+          email: "koratrenish350@gmail.com",
+          password: "Renish@123",
+          phone: "7984048969",
+          gender: "Male"
+        },
+        {
+          name: "KAVY PATEL",
+          email: "kavy@gmail.com",
+          password: "Kavy@1234",
+          phone: "8487927223",
+          gender: "Male"
+        },
+        {
+          name: "meet korat",
+          email: "meet@gmail.com",
+          password: "Meet@123",
+          phone: "8487927223",
+          gender: "Male"
+        },
+        {
+          name: "Rahul Patel",
+          email: "rahul@gmail.com",
+          password: "Rahul@123",
+          phone: "9876543210",
+          gender: "Male"
+        },
+        {
+          name: "Priya Sharma",
+          email: "priya@gmail.com",
+          password: "Priya@123",
+          phone: "9876543211",
+          gender: "Female"
+        },
+        {
+          name: "Meet Shah",
+          email: "meetshah@gmail.com",
+          password: "Meet@123",
+          phone: "9876543212",
+          gender: "Male"
+        },
+        {
+          name: "Krisha Desai",
+          email: "krisha@gmail.com",
+          password: "Krisha@123",
+          phone: "9876543213",
+          gender: "Female"
+        },
+        {
+          name: "Yash Joshi",
+          email: "yash@gmail.com",
+          password: "Yash@123",
+          phone: "9876543214",
+          gender: "Male"
+        },
+        {
+          name: "Neha Verma",
+          email: "neha@gmail.com",
+          password: "Neha@123",
+          phone: "9876543215",
+          gender: "Female"
+        },
+        {
+          name: "Dhruv Korat",
+          email: "dhruv@gmail.com",
+          password: "Dhruv@123",
+          phone: "9876543216",
+          gender: "Male"
+        }
+      ];
+
+      localStorage.setItem("userDetail", JSON.stringify(user1));
       const localStorageArr = JSON.parse(
         localStorage.getItem("userDetail") || "[]"
       );
@@ -364,7 +439,7 @@ export default function Home() {
             <option value="name-asc">Name (A to Z)</option>
             <option value="name-desc">Name (Z to A)</option>
             <option value="email-asc">Email (A to Z)</option>
-           
+
           </select>
         </div>
       </div>
@@ -447,8 +522,8 @@ export default function Home() {
                   key={i}
                   type="button"
                   className={`btn btn-sm ${currentPage === i + 1
-                      ? "btn-primary"
-                      : "btn-outline-primary"
+                    ? "btn-primary"
+                    : "btn-outline-primary"
                     }`}
                   onClick={() => setCurrentPage(i + 1)}
                 >
