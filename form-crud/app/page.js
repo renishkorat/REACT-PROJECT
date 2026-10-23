@@ -209,7 +209,7 @@ export default function Home() {
 
   return (
     <div className="container mt-3">
-      <div className="mx-auto" style={{ maxWidth: "700px" }}>
+      <div className="w-50 mx-auto">
         <h3 className="text-primary mb-3">
           User Registration Form
         </h3>
