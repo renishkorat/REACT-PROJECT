@@ -32,7 +32,7 @@ export default function Home() {
         // Load existing users if data is already available
         const localStorageArr = JSON.parse(savedData);
 
-        if (Array.isArray(locaflStorageArr)) {
+        if (Array.isArray(localStorageArr)) {
           setArrOfObj(localStorageArr);
         }
       } else {
