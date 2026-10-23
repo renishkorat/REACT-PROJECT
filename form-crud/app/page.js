@@ -96,6 +96,20 @@ export default function Home() {
           password: "Dhruv@123",
           phone: "9876543216",
           gender: "Male"
+        },
+        {
+          name: "Harsh Patel",
+          email: "harsh@gmail.com",
+          password: "Harsh@123",
+          phone: "9876543217",
+          gender: "Male"
+        },
+        {
+          name: "Pooja Shah",
+          email: "pooja@gmail.com",
+          password: "Pooja@123",
+          phone: "9876543218",
+          gender: "Female"
         }
       ];
 
