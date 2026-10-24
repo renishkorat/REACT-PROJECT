@@ -303,6 +303,7 @@ export default function Home() {
       return 0;
     });
 
+    // Pagination
   const totalPages = Math.ceil(filteredUsers.length / userPerPage);
 
   const indexOfLastUser = currentPage * userPerPage;
