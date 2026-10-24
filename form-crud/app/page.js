@@ -175,7 +175,7 @@ export default function Home() {
     if (!obj.email.trim()) {
       newErrors.email = "Email is required";
     } else if (
-      !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(obj.email.trim())
+      !obj.email.includes("@gmail.com")
     ) {
       newErrors.email = "Enter a valid email address";
     }
@@ -198,8 +198,8 @@ export default function Home() {
     // Phone validation 
     if (!obj.phone.trim()) {
       newErrors.phone = "Phone number is required";
-    } else if (!/^[6-9][0-9]{9}$/.test(obj.phone.trim())) {
-      newErrors.phone = "Enter a valid 10-digit Indian mobile number";
+    } else if (!/^[0-9]{10}$/.test(obj.phone.trim())) {
+      newErrors.phone = "Phone number must be 10 digits";
     }
 
     // Gender validation 
@@ -440,6 +440,20 @@ export default function Home() {
           >
             {editIndex !== null ? "Update User" : "Submit"}
           </button>
+          {editIndex !== null && (
+            <button
+              type="button"
+              className="btn btn-secondary btn-sm w-100 mt-2"
+              onClick={() => {
+                setEditIndex(null);
+                setObj(initialObj);
+                setErrors({});
+                setShowPassword(false);
+              }}
+            >
+              Cancel
+            </button>
+          )}
         </form>
       </div>
 
