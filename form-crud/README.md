@@ -22,12 +22,21 @@ The app allows users to perform full CRUD actions with data persisting in browse
 
 # 📂 Project Structure
 
+
 form-crud/
+│
 ├── .next/
+│
 ├── app/
-│   └── page.jsx       # Main CRUD App Logic & UI
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.js
+│   └── page.js
+│
 ├── node_modules/
+│
 ├── public/
+│
 ├── .gitignore
 ├── eslint.config.mjs
 ├── jsconfig.json
