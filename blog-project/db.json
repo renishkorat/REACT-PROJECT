@@ -1,0 +1,184 @@
+{
+  "users": [
+    {
+      "name": "Renish Korat",
+      "email": "renish@gmail.com",
+      "password": "1234567890",
+      "id": "p8PruTjmxXo"
+    },
+    {
+      "name": "demo",
+      "email": "demo@gmail.com",
+      "password": "demo@123",
+      "id": "fblUqBjcXA0"
+    }
+  ],
+  "blogs": [
+    {
+      "id": "1",
+      "title": "Getting Started with React",
+      "description": "Learn the basics of React and build modern web applications.",
+      "content": "React is a JavaScript library for building user interfaces. It uses reusable components, props, and state to create interactive applications.",
+      "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=1000",
+      "category": "Technology",
+      "authorId": "demo",
+      "authorName": "Admin",
+      "createdAt": "2026-11-01T10:00:00.000Z"
+    },
+     {
+      "id": "2",
+      "title": "The Future of Artificial Intelligence",
+      "description": "Explore how AI is changing the world and shaping our future.",
+      "content": "Artificial Intelligence is transforming industries such as healthcare, education, business, and technology. AI helps machines learn, solve problems, and make decisions.",
+      "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1000",
+      "category": "Technology",
+      "authorId": "demo",
+      "authorName": "Admin",
+      "createdAt": "2026-11-02T10:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "title": "Latest Technology Trends in 2026",
+      "description": "Discover the latest technology trends changing our daily lives.",
+      "content": "Technology continues to evolve with cloud computing, artificial intelligence, cybersecurity, robotics, and smart devices. These innovations are creating new opportunities.",
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1000",
+      "category": "Technology",
+      "authorId": "demo",
+      "authorName": "Admin",
+      "createdAt": "2026-11-03T10:00:00.000Z"
+    },
+    {
+      "id": "4",
+      "title": "JavaScript for Beginners",
+      "description": "Start your programming journey with JavaScript fundamentals.",
+      "content": "JavaScript is one of the most popular programming languages. It helps developers create dynamic websites using variables, functions, arrays, objects, and events.",
+      "image": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=1000",
+      "category": "Programming",
+      "authorId": "demo",
+      "authorName": "Admin",
+      "createdAt": "2026-11-01T11:00:00.000Z"
+    },
+    {
+      "id": "5",
+      "title": "Mastering CSS Flexbox",
+      "description": "Learn how to create beautiful responsive layouts using CSS Flexbox.",
+      "content": "CSS Flexbox is a powerful layout system that makes it easier to align and distribute elements inside a container. It is widely used in modern responsive web design.",
+      "image": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=1000",
+      "category": "Programming",
+      "authorId": "demo",
+      "authorName": "Admin",
+      "createdAt": "2026-11-02T11:00:00.000Z"
+    },
+    {
+      "id": "6",
+      "title": "Understanding React Hooks",
+      "description": "Learn how React Hooks make functional components powerful.",
+      "content": "React Hooks allow developers to use state and other React features in functional components. Popular hooks include useState, useEffect, useContext, and useRef.",
+      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1000",
+      "category": "Programming",
+      "authorId": "demo",
+      "authorName": "Admin",
+      "createdAt": "2026-11-03T11:00:00.000Z"
+    },
+    {
+      "id": "7",
+      "title": "Simple Habits for a Better Life",
+      "description": "Build positive daily habits to improve your lifestyle.",
+      "content": "Small daily habits can make a big difference in life. Waking up early, drinking enough water, exercising regularly, and maintaining a positive mindset can improve your lifestyle.",
+      "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1000",
+      "category": "Lifestyle",
+      "authorId": "demo",
+      "authorName": "Admin",
+      "createdAt": "2026-11-01T12:00:00.000Z"
+    },
+    {
+      "id": "8",
+      "title": "Work Life Balance Tips",
+      "description": "Discover practical ways to balance professional and personal life.",
+      "content": "Maintaining work-life balance is important for productivity and happiness. Set clear priorities, take regular breaks, spend time with family, and make time for hobbies.",
+      "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1000",
+      "category": "Lifestyle",
+      "authorId": "demo",
+      "authorName": "Admin",
+      "createdAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+      "id": "9",
+      "title": "Healthy Morning Routine",
+      "description": "Start your day with simple and healthy morning activities.",
+      "content": "A healthy morning routine can improve your energy and focus. Begin your day with stretching, meditation, a nutritious breakfast, and a clear plan for your daily goals.",
+      "image": "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=1000",
+      "category": "Lifestyle",
+      "authorId": "demo",
+      "authorName": "Admin",
+      "createdAt": "2026-11-03T12:00:00.000Z"
+    },
+    {
+      "id": "10",
+      "title": "Why Education Is Important",
+      "description": "Understand how education helps build a successful future.",
+      "content": "Education provides knowledge, skills, and confidence. It helps individuals make better decisions, develop critical thinking, and create opportunities for personal and professional growth.",
+      "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1000",
+      "category": "Education",
+      "authorId": "demo",
+      "authorName": "Admin",
+      "createdAt": "2026-11-01T13:00:00.000Z"
+    },
+    {
+      "id": "11",
+      "title": "Best Online Learning Platforms",
+      "description": "Explore online platforms to learn new skills from anywhere.",
+      "content": "Online learning platforms make education accessible to everyone. Students can learn programming, design, business, communication, and many other skills through online courses.",
+      "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1000",
+      "category": "Education",
+      "authorId": "demo",
+      "authorName": "Admin",
+      "createdAt": "2026-11-02T13:00:00.000Z"
+    },
+    {
+      "id": "12",
+      "title": "How to Study More Effectively",
+      "description": "Improve your learning with smart study techniques.",
+      "content": "Effective studying requires planning and consistency. Use active recall, take short breaks, create notes, avoid distractions, and revise topics regularly to improve your understanding.",
+      "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1000",
+      "category": "Education",
+      "authorId": "demo",
+      "authorName": "Admin",
+      "createdAt": "2026-11-03T13:00:00.000Z"
+    },
+    {
+      "id": "13",
+      "title": "Beautiful Places to Visit in India",
+      "description": "Explore some of the most beautiful travel destinations in India.",
+      "content": "India offers incredible travel destinations including Kashmir, Kerala, Rajasthan, Himachal Pradesh, and Goa. Every destination has its own culture, beauty, and unforgettable experiences.",
+      "image": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1000",
+      "category": "Travel",
+      "authorId": "demo",
+      "authorName": "Admin",
+      "createdAt": "2026-11-01T14:00:00.000Z"
+    },
+    {
+      "id": "14",
+      "title": "Travel Tips for Beginners",
+      "description": "Make your first travel experience easy and memorable.",
+      "content": "Planning your first trip can be exciting. Research your destination, prepare a budget, book accommodation early, pack essential items, and keep your travel documents safe.",
+      "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1000",
+      "category": "Travel",
+      "authorId": "demo",
+      "authorName": "Admin",
+      "createdAt": "2026-11-02T14:00:00.000Z"
+    },
+    {
+      "id": "15",
+      "title": "Exploring the Beauty of Mountains",
+      "description": "Discover the peaceful beauty and adventure of mountain travel.",
+      "content": "Mountain destinations offer beautiful landscapes, fresh air, trekking opportunities, and peaceful surroundings. Places like Manali, Ladakh, and Darjeeling are popular destinations for nature lovers.",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1000",
+      "category": "Travel",
+      "authorId": "demo",
+      "authorName": "Admin",
+      "createdAt": "2026-11-03T14:00:00.000Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
